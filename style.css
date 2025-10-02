@@ -1,0 +1,323 @@
+:root {
+    --bg: #151a1c;
+    --bg-alt: #232526;
+    --accent: #80b2c9;
+    --text: white;
+    --muted: #b0b0b0;
+    --card: #2f3538;
+    --card-hover: #313335;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Victor Mono", Arial, sans-serif;
+    background:
+        url("img/qqquad.svg") no-repeat center center/cover,
+        var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+    background:
+        url("img/nnnoise.svg"),
+        url("img/aaabstract.png") no-repeat center center fixed,
+        linear-gradient(120deg, #232526 0%, #001816 100%);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+img {
+    border: 1px solid slategrey;
+    border-radius: 2px;
+    padding: 5px;
+    width: 250px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    max-width: 700px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(227, 225, 226, 0.8),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.divider {
+    background:
+        url("img/triangle-divider.svg") no-repeat center center fixed,
+        linear-gradient(120deg, #232526 0%, #001816 100%);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    min-height: 5vh;
+}
+
+.headshot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.hs_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 2rem;
+}
+
+.headshot img {
+    margin-right: 4rem;
+    object-fit: cover;
+}
+
+.about {
+    text-align: center;
+    font-size: 1.1rem;
+
+    color: var(--text);
+}
+
+.about p {
+    text-align: left;
+    font-family: Raleway, sans-serif;
+    color: var(--muted);
+}
+
+.audio-samples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.audio-sample {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    min-width: 260px;
+    max-width: 340px;
+    transition: background 0.2s;
+}
+
+.audio-sample:hover {
+    background: var(--card-hover);
+}
+
+.audio-sample h3 {
+    margin-top: 0;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+#portfolio {
+    max-width: 1200px; /* or 100vw for full width */
+    margin: 0 auto;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    background: rgba(65, 132, 120, 0.1);
+    border-radius: 1px;
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.portfolio-item .caption {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+footer {
+    background:
+        url("img/nnnoise.svg"),
+        url("img/aaabstract.png") no-repeat center center fixed,
+        linear-gradient(120deg, #232526 0%, #001816 100%);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.social-links a {
+    color: var(--accent);
+    margin: 0 0.7rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.fs-field {
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.fs-textarea {
+    font-size: 1.2rem;
+    color: var(--bg-alt);
+    min-height: 200px;
+    min-width: 500px;
+    background-color: var(--muted);
+    padding: 0.5rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.fs-input {
+    font-size: 1.2rem;
+    color: var(--bg-alt);
+    padding: 0.5rem;
+    border: 1px solid var(--accent);
+    background-color: var(--muted);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.fs-input:focus {
+    border-color: var(--accent);
+}
+
+.fs-button {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Victor Mono", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 150px;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.fs-button:hover,
+.fs-button:focus {
+    opacity: 0.75;
+}
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 2rem 0.5rem;
+    }
+    .audio-sample {
+        min-width: 90vw;
+    }
+}
