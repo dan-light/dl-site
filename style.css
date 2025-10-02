@@ -51,6 +51,10 @@ header p {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     margin-top: 1.5rem;
 }
 
