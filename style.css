@@ -30,8 +30,7 @@ header {
     min-height: 35vh;
     background:
         url("img/nnnoise.svg"),
-        url("img/aaabstract.png") no-repeat center center fixed,
-        linear-gradient(120deg, #232526 0%, #001816 100%);
+        url("img/aaabstract.png") no-repeat center center fixed;
     backdrop-filter: blur(20px);
     text-align: center;
     padding: 2rem 1rem 4rem 1rem;
@@ -230,8 +229,7 @@ hr {
 footer {
     background:
         url("img/nnnoise.svg"),
-        url("img/aaabstract.png") no-repeat center center fixed,
-        linear-gradient(120deg, #232526 0%, #001816 100%);
+        url("img/aaabstract.png") no-repeat center center fixed;
     backdrop-filter: blur(20px);
     text-align: center;
     padding: 1rem 1rem 1rem 1rem;
